@@ -1,6 +1,8 @@
 import { Code, Database, TrendingUp, Users, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
-import profileImage from '/lovable-uploads/b14dcd5c-5786-44f0-beb4-2964f71ca97d.png';
+
+// ✅ Nouveau chemin vers ton image (dans le dossier public)
+const profileImage = '/uploads/Moi.jpg';
 
 const AboutSection = () => {
   const highlights = [
@@ -39,6 +41,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-gradient-section relative">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+
           {/* Header */}
           <motion.div
             className="text-center mb-16"
@@ -47,12 +50,13 @@ const AboutSection = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">À propos de moi</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">À propos de moi</h2>
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
+
+            {/* ✅ Image mise à jour */}
             <motion.div
               className="order-2 lg:order-1"
               initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
